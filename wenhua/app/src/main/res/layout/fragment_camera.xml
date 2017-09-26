@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container"
+            tools:context="com.wenhua.wenhua.controllers.CameraFragment">
+
+            <RelativeLayout
+                android:id="@+id/cameralist_relayout_error_toast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/cameralist_tv_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/textsize_medium"
+                    android:textColor="@color/grey_color2"
+                    android:text="暂时没有数据"/>
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:id="@+id/cameralist_btn_retry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textSize="@dimen/textsize_small"
+                    android:text="重新加载"
+                    android:layout_below="@id/cameralist_tv_error"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/cameralist_progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

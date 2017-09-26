@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--搜索菜单-->
+    <item
+        android:id="@+id/wh_action_snapshot"
+        android:icon="@drawable/phone"
+        android:orderInCategory="80"
+        android:title="@string/wh_token_pic"
+        app:showAsAction="never" />
+    <!--分享菜单-->
+    <item
+        android:id="@+id/wh_action_video"
+        android:icon="@drawable/cammer"
+        android:orderInCategory="90"
+        android:title="@string/wh_token_vid"
+        app:showAsAction="never" />
+    <!--更多菜单-->
+    <item
+        android:id="@+id/wh_action_wechat_push"
+        android:icon="@drawable/chat"
+        android:orderInCategory="100"
+        android:title="@string/wh_token_wechat" />
+</menu>

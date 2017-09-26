@@ -1,0 +1,162 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wenhua.wenhua.controllers.LogCheckFragment"
+    android:background="@color/backgroud_power"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroud_power"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="区域:        "/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_region"
+                    style="@style/style_logcheck_textview_content"
+                    tools:text="深圳"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="线路:        "/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_route"
+                    style="@style/style_logcheck_textview_content"
+                    tools:text="龙岗"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="塔号:        "/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_tower"
+                    style="@style/style_logcheck_textview_content"
+                    tools:text="坂田1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="起始日期:"/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_begin_calendar"
+                    style="@style/style_logcheck_textview_content"
+                    android:drawableRight="@drawable/calendar"
+                    tools:text="2016-01-02"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="起始时间:"/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_begin_time"
+                    style="@style/style_logcheck_textview_content"
+                    android:drawableRight="@drawable/time"
+                    tools:text="20:30"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="结束日期:"/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_end_calendar"
+                    style="@style/style_logcheck_textview_content"
+                    android:drawableRight="@drawable/calendar"
+                    tools:text="2016-02-02"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/style_base_textview"
+                    android:text="结束时间:"/>
+
+                <TextView
+                    android:id="@+id/logcheck_tv_end_time"
+                    style="@style/style_logcheck_textview_content"
+                    android:drawableRight="@drawable/time"
+                    tools:text="20:30"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/logcheck_btn_check"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="查询"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/logcheck_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.wenhua.wenhua.utils.photoviewer.PhotoViewer
+        android:id="@+id/logcheck_pohotoviewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

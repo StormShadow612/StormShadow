@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">文华GPRS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">文华GPRS</string>
+    <string name="title_camera_list">摄像机列表</string>
+
+    <!-- The following is added by Bill Chen  -->
+    <string name="wh_token_pic">远程拍照</string>
+    <string name="wh_token_vid">远程视频</string>
+    <string name="wh_token_wechat">微信推送</string>
+    <string name="wh_token_sendingcmd">正在发送</string>
+    <!-- The above is added by Bill Chen  -->
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_camera_details">CameraDetailsActivity</string>
+    <string name="title_activity_all_camera_details">CameraAllDetailsActivity</string>
+    <string name="title_all_camera_log">LogOwnActivity</string>
+
+</resources>
